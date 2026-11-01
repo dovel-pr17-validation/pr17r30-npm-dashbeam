@@ -243,6 +243,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "ashpd"
+version = "0.13.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fb8421aaa9644a5faf26735f258b669b15f063313ef8f8e2bdb28912a1a6f111"
+dependencies = [
+ "enumflags2",
+ "futures-util",
+ "getrandom 0.4.3",
+ "serde",
+ "tokio",
+ "zbus",
+]
+
+[[package]]
 name = "asn1-rs"
 version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1463,7 +1477,7 @@ name = "dashbeam"
 version = "0.7.2"
 dependencies = [
  "anyhow",
- "ashpd",
+ "ashpd 0.13.13",
  "base64 0.22.1",
  "core-foundation 0.10.1",
  "core-graphics 0.24.0",
@@ -6396,7 +6410,7 @@ version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a15ad77d9e70a92437d8f74c35d99b4e4691128df018833e99f90bcd36152672"
 dependencies = [
- "ashpd",
+ "ashpd 0.11.1",
  "block2",
  "dispatch2",
  "glib-sys 0.18.1",
