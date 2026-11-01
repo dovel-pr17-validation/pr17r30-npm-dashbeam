@@ -71,7 +71,7 @@ cargo-clippy = []
 # The backend is spelled out because ashpd `compile_error!`s if both its
 # async-std and tokio features end up enabled; tauri-plugin-dialog selects
 # `rfd/tokio`, so tokio is the one that must match.
-ashpd = { version = "0.11", optional = true, default-features = false, features = ["tokio"] }
+ashpd = { version = "0.13.13", optional = true, default-features = false, features = ["tokio"] }
 gstreamer = { version = "0.23", optional = true }
 gstreamer-app = { version = "0.23", optional = true }
 gstreamer-video = { version = "0.23", optional = true }
